@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::before
+*::after{
+    box-sizing: border-box; 
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: "Open-Sans", sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+.container{
+  max-width: 1400px;  
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+.list-reset{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.bth-reset{
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+.header{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+padding-top: 24px;
+padding-bottom: 24px;
+}
+
+.menu li {
+    display:inline-block;
+    margin-right: 40px;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    size: 25px;
+}
+
+.hero{
+    background-image:url(https://holographica.space/wp-content/uploads/2018/02/asus-windows-vr-headset-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height:1000px;
+}
+
+.hero-content{  
+    max-width: 616px;
+    margin: 0;
+}
+
+.hero-title{
+    margin: 0;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 200px;
+    color: rgb(255, 255, 255);
+}
+
+.hero-text{
+color: white;
+font-size: 50px;
+margin-top: 0px;
+}
+
+.p{
+margin-top: 40px;
+font-size: 20px;
+color: rgb(37, 37, 37);
+max-width: 1400px;
+text-align: left;
+line-height: 25px;
+}
+
+.img1{
+    width: 400px;
+    height: 200px;
+    box-shadow:  0 0 15px rgb(63, 63, 63);  
+    float: right;
+}
+
+.services-list{
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.services-sub{
+    max-width: 183px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+
+.services-descr{
+margin: 0;
+font-size: 16px;
+line-height: 30px;
+color: rgb(29, 29, 29);
+}
+
+.services-item{
+    display: flex;
+    flex-direction: column;
+}
+.tt{
+    margin-top: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+.t1{
+    line-height: 34px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+}
+.t2{
+ margin: 0;
+ margin-bottom: 10px;
+ font-size: 20px;
+ font-weight: 500;
+}
+.t3{
+    margin: 0;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.gallery{
+    position: relative;
+    padding: 25px 0;
+ }
+ .gallery-list{
+     position: relative;
+     display: flex;
+     flex-wrap: wrap;
+     overflow: hidden;
+     font-size: 0;
+ }
+ .gallery-item{
+     display: block;
+     flex: 25%;
+     overflow: hidden;
+     position: relative;
+ }
+.gallery-item:hover img{
+    transition: steps(1.3);
+}
+.gallery-item-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+.gallery-item:hover .gallery-item-hover{
+    opacity: 1;
+}
+.gallery-item img{
+    height: auto;
+}
+
+table {
+    background: url("https://www.pxwall.com/wp-content/uploads/2018/08/Wallpaper%20Huawei%20Honor%207X%20wallpaper,%20android,%20abstract,%205K,%20OS%203049419274.jpg") 10% 10% no-repeat;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    width: 50%;
+ }
+ th {
+    font-weight: normal;
+    font-size: 14px;
+    color: rgb(48, 48, 48);
+    padding: 10px 12px;
+ }
+ td {
+    color: rgb(37, 37, 37);
+    border-top: 1px solid white;
+    padding: 10px 12px;
+    transition: .3s;
+ }
+ tr:hover td {
+    background: rgba(255, 255, 255, 0.623);
+ }
+
+ .video{
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    
+ }
+ .map {  
+     margin-bottom: 30px; 
+     margin-top: 30px;
+     }
+
+ 
+.footer{
+    background-color: rgba(27, 27, 27, 0.945);
+  
+}
+.footer-top{
+display: flex;
+flex-wrap:wrap ;
+}
+
+.footer-contacts-text{
+    display: block;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 40px;
+}
+.footer-contacts-item{
+    margin-right: 128px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-contacts-value{
+text-decoration: none;
+color: rgb(48, 48, 48);
+font-weight: 700;
+font-size: 16px;
+font-style: normal;
+color: rgb(255, 255, 255);
+}
+
+.footer-b{
+    display: flex;
+    text-align: center;
+    margin-top: 15px;
+
+}
+.copyright{
+    text-align: center;
+    line-height: 21px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+
+
